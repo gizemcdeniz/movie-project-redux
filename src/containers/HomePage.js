@@ -1,5 +1,4 @@
 import React from 'react'
-import NavBar from '../components/NavBar'
 import Footer from '../components/Footer'
 import MoviePage from '../components/MoviePage'
 
@@ -10,7 +9,6 @@ import MoviePage from '../components/MoviePage'
 function HomePage() {
   return (
     <div>
-         <NavBar/>
          <MoviePage/>
          <Footer/>
     </div>

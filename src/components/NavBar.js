@@ -1,11 +1,12 @@
 import React from 'react'
 import { Navbar, Container, Nav, NavDropdown, Form, FormControl, Button } from 'react-bootstrap';
+import './navbar.css';
 
 function NavBar() {
   return (
-    <div><Navbar bg="light" expand="lg">
+    <div ><Navbar bg="dark" expand="lg">
     <Container fluid>
-      <Navbar.Brand href="#">Movie App</Navbar.Brand>
+      <Navbar.Brand  style={{ color: 'white' }}href="#">Movie App</Navbar.Brand>
       <Navbar.Toggle aria-controls="navbarScroll" />
       <Navbar.Collapse id="navbarScroll">
         <Nav
@@ -13,10 +14,10 @@ function NavBar() {
           style={{ maxHeight: '100px' }}
           navbarScroll
         >
-          <Nav.Link href="#action1">Home</Nav.Link>
-          <Nav.Link href="#action2">Link</Nav.Link>
-          <NavDropdown title="Movie Type" id="navbarScrollingDropdown">
-            <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
+          <Nav.Link style={{ color: 'white' }} href="#action1">Home</Nav.Link>
+          <Nav.Link style={{ color: 'white' }} href="#action2">Link</Nav.Link>
+          <NavDropdown  title="Movie Type" id="navbarScrollingDropdown">
+            <NavDropdown.Item   href="#action3">Action</NavDropdown.Item>
             <NavDropdown.Item href="#action4">Another action</NavDropdown.Item>
             <NavDropdown.Divider />
             <NavDropdown.Item href="#action5">
