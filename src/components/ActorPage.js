@@ -34,11 +34,8 @@ function ActorPage() {
                                 <Card.Img style={{ width: '10em' }} variant="top" src={`https://image.tmdb.org/t/p/w500/${item.profile_path}`} alt="posterImage" />
                                 <Card.Body>
                                     <Card.Title>{item.name}</Card.Title>
-                                    <Card.Text> Vote Average:
-                                        {item.id}
-                                    </Card.Text>
-                                    <Button variant="primary">Go somewhere</Button>
-                                    <CircularProgressbar value={item.popularity / 10} text={`${item.popularity}%`} />
+                                    <Button variant="primary">See Detail</Button>
+                                    {/* <CircularProgressbar value={item.popularity / 10} text={`${item.popularity}%`} /> */}
                                 </Card.Body>
                             </Card>
                 ))}
