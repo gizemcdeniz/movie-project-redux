@@ -1,24 +1,18 @@
 import React, { useEffect, useState } from "react";
 import { Card, Button, Container} from 'react-bootstrap';
+import { useHistory } from 'react-router-dom';
 import './movie.css';
 
 function MoviePage() {
     const [allMovie, setAllMovie] = useState([]);
+    const [movieDetail, setMovieDetail] = useState("");
 
-    // useEffect(() => {
-    //     const url = "https://api.themoviedb.org/3/list/1?api_key=d1793e2d14633816edae12bcc4e69e85&language=en-US";
+    // const history = useHistory()
 
-    //     const fetchData = async () => {
-    //         try {
-    //             const response = await fetch(url);
-    //             const json = await response.json();
-    //             console.log(json);
-    //             setallMovie(json);
-    //             console.log(allMovie)
-    //         } catch (error) {
-    //             console.log("error", error);
-    //         }
-    //     };
+    // const navigate = (id) => {
+    //     history.push(`/workspace/${id}`)
+    // }
+
 
     const URL = "https://api.themoviedb.org/3/list/1?api_key=d1793e2d14633816edae12bcc4e69e85&language=en-US"
 
@@ -39,7 +33,8 @@ function MoviePage() {
                                     <Card.Text> Vote Average:
                                         {movie.vote_average}
                                     </Card.Text>
-                                    <Button variant="primary">Go somewhere</Button>
+                                    <Button 
+                                    variant="primary">Go somewhere</Button>
                                 </Card.Body>
                             </Card>
 
